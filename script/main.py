@@ -1,5 +1,5 @@
 import os
-from tensorflow.keras.callbacks import ModelCheckpoint
+
 
 from src.data_loader import ImageDataGenerator
 def main():
