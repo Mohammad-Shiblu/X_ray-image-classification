@@ -1,7 +1,7 @@
 
 from tensorflow.keras.preprocessing import ImageDataGenerator
 
-def data_generator(train_path, val_path, test_path, img_size=(224, 224), train_batch_size=32, val_batch_size = 8):
+def data_generator(train_path, val_path, test_path, img_size=(224, 224), train_batch_size=32, val_batch_size = 16):
     train_datagen = ImageDataGenerator(
         rescale = 1./255,
         rotation_range = 40,
