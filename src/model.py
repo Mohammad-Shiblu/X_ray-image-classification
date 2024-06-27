@@ -2,7 +2,7 @@
 from tensorflow.keras.model import Sequential
 from tesnorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 
-def build_model(input_shape=(224, 224, 3)):
+def create_CNN(input_shape=(224, 224, 3)):
     model = Sequential([
         Conv2D(32, (3, 3), activation = 'relu', input_shape = input_shape),
         MaxPooling2D((2, 2,)),
@@ -16,4 +16,5 @@ def build_model(input_shape=(224, 224, 3)):
         Dense(1, activation = 'sigmoid')
     ])
 
+    model.compile(optimizer='adam', loss = 'binary_cross_entropy', metrics = ['accuracy'])
     return model
