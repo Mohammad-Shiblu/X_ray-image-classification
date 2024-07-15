@@ -7,6 +7,9 @@ node_modules/
 # Ignore CSV files
 *data
 
+# Ignore ouput folder
+output/
+data/
 # Ignore log files
 *.log
 
@@ -31,4 +34,4 @@ dist/
 *.swp
 
 # Ignore text files
-*.txt
+*.txtdata/
